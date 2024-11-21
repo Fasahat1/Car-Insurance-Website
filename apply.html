@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Apply Page</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!-- header -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="header">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="color:white;">FNINSURANCE</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html" style="color:white">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html" style="color:white">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="terms.html" style="color:white">Terms & Conditions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html" style="color:white">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="apply.html" style="color:white">Apply Now</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white">
+                  More
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Company Policy</a></li>
+                  <li><a class="dropdown-item" href="#">Insurance Policy</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Branches</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-danger" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+
+      <!-- Apply now form-->
+
+      <div class="wrapper">
+        <!-- <div class="logo">
+            <img src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-bird-symbols-png-logo-0.png" alt="">
+        </div> -->
+        <div class="text-center mt-4 name">
+            Apply Form
+        </div>
+        <form class="p-3 mt-3">
+
+            <div class="form-field d-flex align-items-center">
+                <span class="far fa-user"></span>
+                <input type="text" name="" id="userName" placeholder="User Name" required>
+            </div>
+            <span id="n_msg"></span>
+
+           
+
+            <div class="form-field d-flex align-items-center">
+              <span class="far fa-user"></span>
+              <input type="email" name="" id="mail" placeholder="Email">
+            </div>
+            <span id="e_msg"></span>
+
+          <div class="form-field d-flex align-items-center">
+            <span class="far fa-user"></span>
+            <input type="text" name="" id="number" placeholder="Phone Number">
+        </div>
+        <span id="p_msg"></span>
+
+        <div class="form-field d-flex align-items-center">
+          <span class="far fa-user"></span>
+          <input type="text" name="" id="address" placeholder="Address">
+      </div>
+      <span id="ad_msg"></span>
+
+            <div class="form-field d-flex align-items-center">
+                <span class="fas fa-key"></span>
+                <input type="text" name="" id="vehicle" placeholder="Vehicle Make">
+            </div>
+            <span id="v_msg"></span>
+
+            <div class="form-field d-flex align-items-center">
+              <span class="far fa-user"></span>
+              <input type="text" name="" id="model" placeholder="Model">
+          </div>
+          <span id="m_msg"></span>
+
+          <div class="form-field d-flex align-items-center">
+            <span class="far fa-user"></span>
+            <input type="text" name="" id="color" placeholder="Color">
+        </div>
+        <span id="c_msg"></span>
+
+      <div>
+        <span class="far fa-user"></span>
+        <select style="width: 200px;">
+          <option disabled selected>Select</option>
+          <option>New</option>
+          <option>Use</option>
+      </select>
+         
+    </div>
+            <button type="button" class="btn mt-3" onclick="apply()">Sumbit</button>
+        </form>
+        <!-- <div class="text-center fs-6">
+            <a href="#">Forget password?</a> or <a href="#">Sign up</a>
+        </div> -->
+    </div>
+
+
+
+
+
+     <!-- footer -->
+
+     <!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container-fluid" style="margin-top: 100px;">
+
+  <footer class="text-white text-center text-lg-start" style="background-color: black;">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row mt-4">
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">FN CAR INSURANCE COMPANY</h5>
+
+          <p>
+            FN has made the process of vehicle insurance in Pakistan easier and quicker than ever before. 
+            We understand the importance of time.<br> 
+            Therefore, we have streamlined the entire process for vehicle 
+            owners all across Pakistan. We ensure you get the coverage you need without any hassle. 
+            Insurance of your car is necessary to cover the damage related to your vehicle.
+          </p>
+
+          
+
+          <div class="mt-4">
+            <!-- Facebook -->
+            <a type="button" class="btn btn-floating btn-light btn-lg" id="fb"><i class="fab fa-facebook-f" ></i></a>
+            <!-- Dribbble -->
+            <a type="button" class="btn btn-floating btn-light btn-lg" id="twi"><i class="fab fa-twitter"></i></a>
+            <!-- Twitter -->
+            <a type="button" class="btn btn-floating btn-light btn-lg" id="insta"><i class="fa-brands fa-square-instagram"></i></a>
+            <!-- Google + -->
+            <a type="button" class="btn btn-floating btn-light btn-lg" id="whats"><i class="fa-brands fa-square-whatsapp"></i></a>
+            <!-- Linkedin -->
+          </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <!-- <h5 class="text-uppercase mb-4 pb-1">Search something</h5> -->
+
+          <!-- <div class="form-outline form-white mb-4">
+            <input type="text" id="formControlLg" class="form-control form-control-lg">
+            <label class="form-label" for="formControlLg" style="margin-left: 0px;">Search</label>
+          <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 48.8px;"></div><div class="form-notch-trailing"></div></div></div> -->
+
+          <ul class="fa-ul" style="margin-left: 100px;">
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">New York, NY 10012, US</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">info@example.com</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 01 234 567 88</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">+ 01 234 567 89</span>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Links</h5>
+
+          <!-- <table class="table text-center text-white">
+            <tbody class="font-weight-normal">
+              <tr>
+                <td>Mon - Thu:</td>
+                <td>8am - 9pm</td>
+              </tr>
+              <tr>
+                <td>Fri - Sat:</td>
+                <td>8am - 1am</td>
+              </tr>
+              <tr>
+                <td>Sunday:</td>
+                <td>9am - 10pm</td>
+              </tr>
+            </tbody> -->
+
+            <a href="index.html" class="links">Home</a>
+            <br>
+            <a href="about.html" class="links">About</a>
+            <br>
+            <a href="terms.html" class="links">Terms & Conditions</a>
+            <br>
+            <a href="contact.html" class="links">Contact</a>
+            <br>
+            <a href="apply.html" class="links">Apply</a>
+
+          <!-- </table> -->
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2024-2025 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/" id="last">Fasahat Najeeb</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  
+</div>
+<!-- End of .container -->
+
+
+    <script>
+
+      function apply(){
+
+            let name = document.getElementById("userName")
+            let email = document.getElementById("mail")
+            let number = document.getElementById("number")
+            let address = document.getElementById("address")
+            let vehicle = document.getElementById("vehicle")
+            let model = document.getElementById("model")
+            let color = document.getElementById("color")
+            let nmsg = document.getElementById("n_msg")
+            let emsg = document.getElementById("e_msg")
+            let pmsg = document.getElementById("p_msg")
+            let admsg = document.getElementById("ad_msg")
+            let vmsg = document.getElementById("v_msg")
+            let mmsg = document.getElementById("m_msg")
+            let cmsg = document.getElementById("c_msg")
+
+
+     
+       // all fields are required
+
+    var error = "";
+       
+    if(name.value == ""){
+    nmsg.innerHTML="Name is required"
+    nmsg.style.color="red"
+    error+="Name is required"
+  }
+  else{
+      nmsg.innerHTML=""
+  }
+    
+    if(email.value == ""){
+    emsg.innerHTML="Email is required"
+    emsg.style.color="red"
+    error+="Email is required"
+  }
+  else{
+    emsg.innerHTML=""
+  }
+  
+  if(number.value == ""){
+    pmsg.innerHTML="Phone number is required"
+    pmsg.style.color="red"
+    error+="number is required"
+  }
+  else{
+    pmsg.innerHTML=""
+  }
+  
+  if(address.value == ""){
+    admsg.innerHTML="Address is required"
+    admsg.style.color="red"
+    error+="Address is required"
+}
+
+else{
+    admsg.innerHTML=""
+}
+
+if(vehicle.value == ""){
+    vmsg.innerHTML="Vehicle is required"
+    vmsg.style.color="red"
+    error+="Vehicle is required"
+}
+
+else{
+  vmsg.innerHTML=""
+}
+
+if(model.value == ""){
+    mmsg.innerHTML="Model is required"
+    mmsg.style.color="red"
+    error+="Model is required"
+}
+
+else{
+  mmsg.innerHTML=""
+}
+
+if(color.value == ""){
+    cmsg.innerHTML="Color is required"
+    cmsg.style.color="red"
+    error+="Color is required"
+}
+
+else{
+    cmsg.innerHTML=""
+}
+
+
+
+// data store
+
+localStorage.setItem("Name",name.value)
+localStorage.setItem("Email",email.value)
+localStorage.setItem("Phone Number",number.value)
+localStorage.setItem("Address",address.value)
+localStorage.setItem("Vehicle",vehicle.value)
+localStorage.setItem("Model",model.value)
+localStorage.setItem("Color",color.value)
+
+if(error==""){
+  alert("Successfully Submitted your Application.Our representative will contact you as soon as possible.Thank You!")
+
+      location.assign("apply.html")
+}
+
+      }
+
+
+
+
+     
+    </script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+   
+  </body>
+</html>

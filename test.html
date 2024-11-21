@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Contact Page</title>
+
+
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!-- header -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="header">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="color:white;">CAR INSURANCE</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html" style="color:white">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html" style="color:white">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="terms.html" style="color:white">Terms & Conditions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html" style="color:white">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="apply.html" style="color:white">Apply Now</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white">
+                  More
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Company Policy</a></li>
+                  <li><a class="dropdown-item" href="#">Insurance Policy</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Branches</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-danger" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+      <!-- form -->
+      <center><form style="width: 400px;height: 500px; " id="form">
+
+        <h1 class="contact">Contact Us</h1>
+        <!-- Name input -->
+         <div class="oye" style="margin-top: 50px;">
+        <div data-mdb-input-init class="form-outline mb-4">
+          <!-- <label class="form-label" for="form4Example1" style="color: white;">Name</label> -->
+          <input type="text" id="form4Example1" class="form-control" placeholder="Name"/>
+         
+        </div>
+      
+        <!-- Email input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+          <!-- <label class="form-label" for="form4Example2">Email address</label> -->
+          <input type="email" id="form4Example2" class="form-control" placeholder="Email Address"/>
+          <span id="e_msg"></span>
+          
+        </div>
+
+        <!-- phone number input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+          <!-- <label class="form-label" for="form4Example2">Email address</label> -->
+          <input type="text" id="form4Example3" class="form-control" placeholder="Phone Number" />
+          
+        </div>
+      
+        <!-- Message input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+          <textarea class="form-control" id="form4Example4" rows="4" placeholder="Message"></textarea>
+          <!-- <label class="form-label" for="form4Example3">Message</label> -->
+        </div>
+      
+        <!-- Checkbox -->
+        <!-- <div class="form-check d-flex justify-content-center mb-4">
+          <input
+            class="form-check-input me-2"
+            type="checkbox"
+            value=""
+            id="form4Example4"
+            checked
+          />
+          <label class="form-check-label" for="form4Example4">
+            Send me a copy of this message
+          </label>
+        </div> -->
+      
+        <!-- Submit button -->
+        <button data-mdb-ripple-init type="button" onclick="apply()" class="btn btn-dark btn-block mb-4" id="btn">Send</button>
+      </div>
+      </form>
+    </center>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+    <script>
+
+        // function submit(){
+  
+              // let name = document.getElementById("userName")
+            //   let email = document.getElementById("form4Example2")
+              // let number = document.getElementById("number")
+              // let address = document.getElementById("address")
+              // let vehicle = document.getElementById("vehicle")
+              // let model = document.getElementById("model")
+              // let color = document.getElementById("color")
+              // let nmsg = document.getElementById("n_msg")
+              // let emsg = document.getElementById("e_msg")
+              // let pmsg = document.getElementById("p_msg")
+              // let admsg = document.getElementById("ad_msg")
+              // let vmsg = document.getElementById("v_msg")
+              // let mmsg = document.getElementById("m_msg")
+              // let cmsg = document.getElementById("c_msg")
+  
+  
+  
+  
+  
+               // data store in local storage
+  
+        // localStorage.setItem("Email",email.value)
+        // localStorage.setItem("Phone Number",number.value)
+        // localStorage.setItem("Address",address.value)
+  
+        // alert("Successfully Submitted your Application.Our representative will contact you as soon as possible.Thank You!");
+  
+        // location.assign("home.html");
+  
+  
+  
+         // all fields are required
+  
+  //     var error = "";
+         
+  //     if(name.value == ""){
+  //     nmsg.innerHTML="Name is required"
+  //     nmsg.style.color="red"
+  //     error+="Name is required"
+  //   }
+  //   else{
+  //       nmsg.innerHTML=""
+  //   }
+      
+  //     if(email.value == ""){
+  //     emsg.innerHTML="Email is required"
+  //     emsg.style.color="red"
+  //     error+="Email is required"
+  //   }
+  //   else{
+  //     emsg.innerHTML=""
+  //   }
+    
+  //   if(number.value == ""){
+  //     pmsg.innerHTML="number is required"
+  //     pmsg.style.color="red"
+  //     error+="number is required"
+  //   }
+  //   else{
+  //     pmsg.innerHTML=""
+  //   }
+    
+  //   if(address.value == ""){
+  //     admsg.innerHTML="address is required"
+  //     admsg.style.color="red"
+  //     error+="Address is required"
+  // }
+  
+  // else{
+  //     admsg.innerHTML=""
+  // }
+  
+  // if(vehicle.value == ""){
+  //     vmsg.innerHTML="vehicle is required"
+  //     vmsg.style.color="red"
+  //     error+="Vehicle is required"
+  // }
+  
+  // else{
+  //   vmsg.innerHTML=""
+  // }
+  
+  // if(model.value == ""){
+  //     mmsg.innerHTML="model is required"
+  //     mmsg.style.color="red"
+  //     error+="Model is required"
+  // }
+  
+  // else{
+  //   mmsg.innerHTML=""
+  // }
+  
+  // if(color.value == ""){
+  //     cmsg.innerHTML="color is required"
+  //     cmsg.style.color="red"
+  //     error+="Color is required"
+  // }
+  
+  // else{
+  //     cmsg.innerHTML=""
+  // }
+  
+        // }
+
+
+
+        
+      function apply(){
+
+          let email = document.getElementById("form4Example2");
+          let emsg = document.getElementById("e_msg")
+
+          var error = "";
+
+          if(email.value == ""){
+      emsg.innerHTML="Email is required"
+      emsg.style.color="yellow"
+      error+="Email is required"
+    }
+    else{
+      emsg.innerHTML=""
+    }
+
+    if(error==""){
+        localStorage.setItem("Email",email.value);
+        alert("Your message successfully send. Thank You!");
+        location.assign("index.html");
+    }
+          
+      }
+   
+  
+  
+  
+  
+       
+      </script>
+   
+  </body>
+</html>

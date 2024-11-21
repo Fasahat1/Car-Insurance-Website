@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: darkred;
+}
+
+.navbar-brand:hover{
+    color: red !important;
+    cursor: pointer !important;
+}
+
+.nav-link active:hover{
+
+    color: red !important;
+    cursor: pointer !important;
+
+}
+
+.nav-link:hover{
+
+    color: red !important;
+    cursor: pointer !important;
+}
+
+.content{
+    color: black;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px;
+}
+
+.heading{
+    color: white;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+    margin-top: 30px;
+}
+
+.h5{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-text{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading1{
+    color: black;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.list{
+    color: black;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.matter{
+    color: black;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.first{
+    margin-left: 20px;
+}
+
+#fb:hover{
+    background-color: darkblue !important;
+    cursor: pointer !important;
+}
+
+#twi:hover{
+    background-color: lightblue !important;
+    cursor: pointer !important;
+}
+
+#insta:hover{
+    background-color: palevioletred !important;
+    cursor: pointer !important;
+}
+
+#whats:hover{
+    background-color: green !important;
+    cursor: pointer !important;
+}
+
+.links{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#last{
+    text-decoration: none;
+}
+
+.links:hover{
+    color: red;
+    cursor: pointer;
+}
+
+/* #header{
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1;
+} */
+
+#form{
+    margin-top: 120px;
+}
+#btn:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+.contact{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.contact:hover{
+    color: black;
+    cursor: pointer;
+}
+
+#header{
+    position: sticky;
+    top: 0;
+}
+
+.heading2{
+    color: white;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.heading2:hover{
+    color: darkred;
+    cursor: pointer;
+}
+
+.list2{
+    color: white;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.aloo{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px
+}
+
+
+/* apply now form code */
+
+/* Importing fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Reseting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body {
+    background: darkred;
+}
+
+.wrapper {
+    max-width: 450px;
+    min-height: 500px;
+    margin: 50px auto;
+    padding: 40px 30px 30px 30px;
+    background-color: #ecf0f3;
+    border-radius: 15px;
+    /* box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff; */
+}
+
+/* .logo {
+    width: 80px;
+    margin: auto;
+} */
+
+/* .logo img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 0px 3px #5f5f5f,
+        0px 0px 0px 5px #ecf0f3,
+        8px 8px 15px #a7aaa7,
+        -8px -8px 15px #fff;
+} */
+
+.wrapper .name {
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: 1.3px;
+    padding-left: 10px;
+    color: #555;
+}
+
+.wrapper .form-field input {
+    width: 100%;
+    display: block;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.2rem;
+    color: #666;
+    padding: 10px 15px 10px 10px;
+    /* border: 1px solid red; */
+}
+
+.wrapper .form-field {
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+}
+
+.wrapper .form-field .fas {
+    color: #555;
+}
+
+.wrapper .btn {
+    box-shadow: none;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    color: #fff;
+    border-radius: 25px;
+    box-shadow: 3px 3px 3px #b1b1b1,
+        -3px -3px 3px #fff;
+    letter-spacing: 1.3px;
+}
+
+.wrapper .btn:hover {
+    background-color: darkred;
+}
+
+.wrapper a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: #03A9F4;
+}
+
+.wrapper a:hover {
+    color: #039BE5;
+}
+
+@media(max-width: 380px) {
+    .wrapper {
+        margin: 30px 20px;
+        padding: 40px 15px 15px 15px;
+    }
+}
+
+
+
+
+
+
+/* slider saira */
+
+.banner{
+	/* height: 250px; */
+	margin: auto;
+	position: relative;
+	width: 100%;
+	display: grid;
+	place-items: center;
+	overflow: hidden;
+
+}
+.slider{
+	display: flex;
+	width: calc(150px * 18);
+	animation: scroll 20s linear infinite;
+}
+
+.slider-image{
+	display: flex;
+	align-items: center;
+}
+
+.slider-image img{
+	width: 100%;
+	transition: transform 1s;
+	border-radius: 20px;
+	border: 5px solid black;
+    margin: 20px;
+}
+
+/* .slider-image img:hover{
+	transform: scale(1.1);
+	cursor: pointer;
+	overflow: hidden;
+} */
+
+
+@keyframes scroll{
+	0%{
+		transform: translateX(0);
+	}
+
+	100%{
+		transform: translateX(calc(-150px * 9));
+	}
+}
+
